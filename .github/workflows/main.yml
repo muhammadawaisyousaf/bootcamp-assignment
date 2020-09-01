@@ -25,6 +25,7 @@ jobs:
         
       # Runs a set of commands using the runners shell
       - name: Setup Surge
-        run: 
-              npm install surge
-              surge ./ http://awais-bootcamp2020-testingdomain.surge.sh/ --token
+        run:  npm install surge
+      - name: Deploying On Surge
+        run:  surge ./ http://awais-bootcamp2020-testingdomain.surge.sh/ {{secrets.TOKEN}}
+              
