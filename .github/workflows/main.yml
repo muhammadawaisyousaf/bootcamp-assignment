@@ -27,4 +27,4 @@ jobs:
       - name: Setup Surge
         run:  npm install -g surge
       - name: Deploying On Surge
-        run:  surge ./ http://awais-bootcamp2020-testingdomain.surge.sh/ --token "daeade17b4f7c6cf7c20d860d0a56feb"
+        run:  surge ./ http://awais-bootcamp2020-testingdomain.surge.sh/ --token ${{secrets.TOKEN}}
