@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1 style="text-align: center; font-family: 'Times New Roman';" >Survey Form</h1>
+    <form>
+        <br><br>
+    <p>Let us know how can we improve freeCodeCamp</p><br>
+    <label>Name <input type="text" name="name" id="name"></label>
+    <br><br>
+    <label>Email <input type="email" name="email" id="email"></label>
+    <br><br>
+    <label>Age <select id="age">
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+    </select></label>
+    <br><br>
+    <label>Which option best describe your current role?
+        <select id="job-position">
+            <option>Student</option>
+            <option>Employeed</option>
+            <option>UnEmployeed</option>
+            <option>Business</option>
+        </select>
+    </label>
+    <br><br>
+    <label>How likely is that you would recommend freeCodeCamp to a friend?
+        <p><input type="radio" name="recommend" value="def"> Definitely</p>
+        <p><input type="radio" name="recommend" value="maybe"> Maybe</p>
+        <p><input type="radio" name="recommend" value="not"> Not sure</p>
+    </label>
+    <br><br>
+    <br>
+        <label>What do you like most in FCC?
+            <select>
+                <option>Select</option>
+            </select>
+        </label>
+        <br><br>
+        <p>Things that should be improved in the future<br>
+            <input type="checkbox"> Front-end Projects<br>
+            <input type="checkbox"> Back-end Projects<br>
+            <input type="checkbox"> Data Visualization<br>
+        </p>
+        <input type="submit" id="submit-btn">
+</form>
+<script src="index.js"></script>
+
+</body>
+</html>
